@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+}
+.header .h-container {
+  width: 72%;
+  align-items: center;
+}
+@media (max-width: 1600px) {
+  .header .h-container {
+    width: 80%;
+  }
+}
+.header .h-container .header-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .header .h-container .header-info {
+    display: block;
+    flex-direction: column;
+  }
+}
+.header .h-container .header-info .logo img {
+  height: 55px;
+}
+.header .h-container .header-info .navbar {
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .header .h-container .header-info .navbar {
+    display: none;
+  }
+}
+.header .h-container .header-info .navbar .navlist {
+  margin-bottom: 0;
+  gap: 50px;
+  display: flex;
+}
+.header .h-container .header-info .navbar .navlist .navitem {
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+.header .h-container .header-info .navbar .navlist .navitem a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: white;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  padding: 30px 0 30px 0;
+  transition: 0.5s;
+}
+.header .h-container .header-info .navbar .navlist .navitem a:hover {
+  color: #FF4533;
+}
+@media (max-width: 1600px) {
+  .header .h-container .header-info .navbar .navlist .navitem a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1575px) {
+  .header .h-container .header-info .navbar .navlist .navitem a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1320px) {
+  .header .h-container .header-info .navbar .navlist .navitem a {
+    font-size: 15px;
+  }
+}
+.header .h-container .header-info .navbar .navlist .navitem .dropdown-menu {
+  border-radius: 0;
+  display: none;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  background-color: #fff;
+}
+.header .h-container .header-info .navbar .navlist .navitem .dropdown-menu li {
+  padding: 15px 0;
+}
+.header .h-container .header-info .navbar .navlist .navitem .dropdown-menu li a {
+  color: black;
+  margin-right: 130px;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+.header .h-container .header-info .navbar .navlist .navitem:hover .dropdown-menu {
+  animation: slide-up 0.5s forwards;
+  display: block;
+}
+.header .h-container .header-info .header-button {
+  justify-content: flex-end;
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .header .h-container .header-info .header-button {
+    display: none;
+  }
+}
+.header .h-container .header-info .header-button .button {
+  background-color: #FF4533;
+  padding: 18px 60px;
+  margin-bottom: 0;
+  transition: 0.5s;
+  border: 1px solid #FF4533;
+}
+@media (max-width: 1467px) {
+  .header .h-container .header-info .header-button .button {
+    padding: 18px 40px;
+  }
+}
+@media (max-width: 1300px) {
+  .header .h-container .header-info .header-button .button {
+    padding: 15px 26px;
+  }
+}
+.header .h-container .header-info .header-button .button:hover {
+  background-color: transparent;
+  border: 1px solid #FF4533;
+}
+.header .h-container .header-info .header-button .button a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Anton", sans-serif;
+  text-transform: capitalize;
+  color: white;
+}
+.header .h-container .header-info .mobil-nav {
+  width: 100%;
+  background-color: rgb(76, 76, 76);
+  display: none;
+  justify-content: flex-end;
+  padding: 15px 15px;
+}
+@media (max-width: 1200px) {
+  .header .h-container .header-info .mobil-nav {
+    display: flex;
+  }
+}
+.header .h-container .header-info .mobil-nav .icon {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(34, 34, 34);
+}
+.header .h-container .header-info .mobil-nav .icon .hamburger-icon {
+  cursor: pointer;
+}
+.header .h-container .header-info .mobil-nav .icon .hamburger-icon i {
+  font-size: 25px;
+  color: white;
+}
+.header .h-container .header-info .mobil-nav .icon span {
+  font-size: 20px;
+  font-family: "Mulish", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: gray;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=main.css.map */
