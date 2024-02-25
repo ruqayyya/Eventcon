@@ -1,10 +1,17 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 .slider {
+    height: 100vh;
     justify-content: center;
     align-items: center;
     display: flex;
     .s-container {
-        width: 72%;
+        width: 73%;
         position: relative;
         @media (max-width: 1600px) {
             width: 80%;
@@ -15,14 +22,24 @@
         @media (max-width: 1570px) {
             width: 85%;
         }
+        @media (max-width: 764px) {
+            
+        }
         .slider-info {
             width: 100%;
             position: relative;
-            top: 200px;
+            top: -140px;
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: center;
+            @media (max-width: 930px) {
+                height: 150px;
+                top: -180px;
+            }
+            @media (max-width: 764px) {
+                top: -200px;
+            }
             .img-box {
                 width: 100%;
                 .img-box-left {
@@ -30,6 +47,21 @@
                     padding-top: 120px;
                     img {
                         height: 240px;
+                        @media (max-width: 930px) {
+                            height: 230px;
+                        }
+                        @media (max-width: 835px) {
+                            height: 200px;
+                        }
+                        @media (max-width: 764px) {
+                            height: 150px;
+                        }
+                        @media (max-width: 500px) {
+                            height: 100px;
+                        }
+                        @media (max-width: 350px) {
+                            height: 60px;
+                        }
                     }
                 }
                 .img-box-right {
@@ -37,6 +69,21 @@
                     padding-bottom: 80px;
                     img {
                         height: 320px;
+                        @media (max-width: 930px) {
+                            height: 280px;
+                        }
+                        @media (max-width: 835px) {
+                            height: 250px;
+                        }
+                        @media (max-width: 764px) {
+                            height: 180px;
+                        }
+                        @media (max-width: 500px) {
+                            height: 150px;
+                        }
+                        @media (max-width: 350px) {
+                            height: 100px;
+                        }
                     }
                 }
             }
@@ -49,7 +96,40 @@
                     font-weight: 400;
                     margin-top: 55px;
                     margin-bottom: 40px;
-                    font-family: "Monoton", sans-serif;                    color: white;
+                    font-family: "Monoton", sans-serif;                    
+                    color: white;
+                    @media (max-width: 1600px) {
+                        font-size: 140px;
+                    }
+                    @media (max-width: 1430px) {
+                        font-size: 135px;
+                    }
+                    @media (max-width: 1380px) {
+                        font-size: 130px;
+                    }
+                    @media (max-width: 1330px) {
+                        font-size: 110px;
+                    }
+                    @media (max-width: 1130px) {
+                        font-size: 90px;
+                    }
+                    @media (max-width: 930px) {
+                        font-size: 80px;
+                    }
+                    @media (max-width: 835px) {
+                        font-size: 60px;
+                    }
+                    @media (max-width: 764px) {
+                        font-size: 40px;
+                    }
+                    @media (max-width: 500px) {
+                        font-size: 30px;
+                    }
+                    @media (max-width: 350px) {
+                        font-size: 20px;
+                        margin-top: 30px;
+                        margin-bottom: 27px;
+                    }
                 }
                 .first-text {
                     color: #FF4533;
@@ -58,6 +138,15 @@
                     color: white;
                     font-size: 35px;
                     font-family: "Anton", sans-serif;
+                    @media (max-width: 764px) {
+                        font-size: 20px;
+                    }
+                    @media (max-width: 500px) {
+                        font-size: 15px;
+                    }
+                    @media (max-width: 350px) {
+                        font-size: 10px;
+                    }
                 }
             }
         }
