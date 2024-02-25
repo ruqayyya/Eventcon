@@ -138,13 +138,6 @@
                 @media (max-width: 1200px) {
                     display: flex;
                 }
-                // &.show {
-                //     opacity: 1;
-                //     visibility: visible;
-                //     width: 100%;
-                //     height: 300px;
-                //     background-color: rgb(76, 76, 76);
-                // }
                 .icon {
                     align-items: center;
                     gap: 10px;
@@ -171,7 +164,12 @@
 }
 
 body {
-    background-color: gray;
+    background-image: url(../assets/images/banner/banner.png.webp);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
 
 @keyframes slide-up {
