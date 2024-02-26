@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.about {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+    .a-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 73%;
+        @media (max-width: 1600px) {
+            width: 80%;
+        }
+        @media (max-width: 1200px) {
+            width: 90%;
+        }
+        @media (max-width: 1570px) {
+            width: 85%;
+        }
+        @media (max-width: 1024px) {
+            width: 96%;
+        }
+        .about-text {
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            h3 {
+                font-size: 90px;
+                color: white;
+                font-family: "Anton", sans-serif;
+            }
+            p {
+                font-size: 25px;
+                color: #AAB1B7;
+                width: 60%;
+            }
+        }
+        .info {
+            height: 100vh;
+            padding-top: 80px;
+            .row {
+                @media (max-width: 1024px) {
+                    width: 1024;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .about-image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    z-index: 2;
+                    .back-img {
+                        position: absolute;
+                        bottom: -70px;
+                        left: -70px;
+                        z-index: -1;
+                        img {
+                            height: 250px;
+                        }
+                    }
+                    img {
+                        width: 90%;
+                    }
+                }
+                .right-about {
+                    padding: 70px 0;
+                    .about-info {
+                        h4 {
+                            color: #FF4533;
+                            font-size: 40px;
+                            font-family: "Anton", sans-serif;
+                            @media (max-width: 1024px) {
+                                font-size: 20px;
+                                width: 100%;
+                            }
+                        }
+                        p {
+                            color: #AAB1B7;
+                            margin-top: 40px;
+                            margin-bottom: 50px;
+                            font-size: 25px;
+                            font-family: "Muli", sans-serif;
+                            @media (max-width: 1024px) {
+                                width: 100%;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    .about-button {
+                        display: flex;
+                        justify-content: flex-start;
+                        .button {
+                            background-color: #FF4533 ;
+                            padding: 10px 60px;
+                            margin-bottom: 0;
+                            transition: 0.5s;
+                            border: 1px solid #FF4533;
+                            @media (max-width: 1467px) {
+                                padding: 18px 40px;
+                            }
+                            @media (max-width: 1300px) {
+                                padding: 15px 26px;
+                            }
+                            &:hover {
+                                background-color: transparent;
+                                border: 1px solid #FF4533;
+                            }
+                            a {
+                                text-decoration: none;
+                                font-size: 30px;
+                                font-weight: 400;
+                                font-family: "Anton", sans-serif;
+                                text-transform: capitalize;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
