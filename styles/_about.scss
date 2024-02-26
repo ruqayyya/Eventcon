@@ -9,6 +9,7 @@
 .about {
     background-color: black;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,14 +43,24 @@
                 font-size: 90px;
                 color: white;
                 font-family: "Anton", sans-serif;
+                @media (max-width: 400px) {
+                    font-size: 40px;
+                }
+                @media (max-width: 1024px) {
+                    font-size: 30px;
+                }
             }
             p {
                 font-size: 25px;
                 color: #AAB1B7;
                 width: 60%;
+                @media (max-width: 400px) {
+                    font-size: 15px;
+                }
             }
         }
         .info {
+            width: 100%;
             height: 100vh;
             padding-top: 80px;
             .row {
@@ -69,16 +80,60 @@
                         bottom: -70px;
                         left: -70px;
                         z-index: -1;
+                        @media (max-width: 400px) {
+                            bottom: -50px;
+                            left: -20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        @media (max-width: 764px) {
+                            left: -10px;
+                            bottom: -40px;
+                        }
+                        @media (max-width: 1024px) {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        @media (max-width: 1000px) {
+                            left: -10px;
+                            bottom: -30px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
                         img {
                             height: 250px;
+                            @media (max-width: 400px) {
+                                height: 150px;
+                            }
+                            @media (max-width: 764px) {
+                                height: 120px;
+                            }
+                            @media (max-width: 1000px) {
+                                height: 120px;
+                            }
                         }
                     }
                     img {
                         width: 90%;
+                        @media (max-width: 400px) {
+                            width: 100%;
+                        }
+                        @media (max-width: 764px) {
+                            // width: 20%;
+                        }
+                        @media (max-width: 1024px) {
+                            width: 100%;
+                        }
                     }
                 }
                 .right-about {
                     padding: 70px 0;
+                    @media (max-width: 400px) {
+                        padding: 40px 0;
+                    }
                     .about-info {
                         h4 {
                             color: #FF4533;
@@ -87,7 +142,11 @@
                             @media (max-width: 1024px) {
                                 font-size: 20px;
                                 width: 100%;
-                            }
+                            }   
+                            @media (max-width: 360px) {
+                                font-size: 30px;
+                                width: 80%;
+                            }               
                         }
                         p {
                             color: #AAB1B7;
@@ -96,6 +155,14 @@
                             font-size: 25px;
                             font-family: "Muli", sans-serif;
                             @media (max-width: 1024px) {
+                                width: 100%;
+                                font-size: 15px;
+                            }
+                            @media (max-width: 1024px) {
+                                font-size: 20px;
+                                width: 80%;
+                            }
+                            @media (max-width: 1000px) {
                                 width: 100%;
                                 font-size: 15px;
                             }
@@ -116,6 +183,16 @@
                             @media (max-width: 1300px) {
                                 padding: 15px 26px;
                             }
+                            @media (max-width: 400px) {
+                                padding: 7px 15px;
+                                margin-bottom: 50px;
+                            }
+                            @media (max-width: 764px) {
+                                padding: 10px 20px;
+                            }
+                            @media (max-width: 1000px) {
+                                padding: 7px 20px;
+                            }
                             &:hover {
                                 background-color: transparent;
                                 border: 1px solid #FF4533;
@@ -127,6 +204,13 @@
                                 font-family: "Anton", sans-serif;
                                 text-transform: capitalize;
                                 color: white;
+                                @media (max-width: 400px) {
+                                    font-size: 20px;
+                                }
+                                @media (max-width: 764px) {
+                                    font-size: 20px;
+                                }
+                                
                             }
                         }
                     }
