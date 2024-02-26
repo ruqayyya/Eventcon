@@ -713,6 +713,11 @@
     width: 100%;
   }
 }
+@media (max-width: 1000px) {
+  .about .a-container .info .row .about-image img {
+    width: 100%;
+  }
+}
 .about .a-container .info .row .right-about {
   padding: 70px 0;
 }
@@ -738,6 +743,18 @@
     width: 80%;
   }
 }
+@media (max-width: 1000px) {
+  .about .a-container .info .row .right-about .about-info h4 {
+    width: 100%;
+    font-size: 30px;
+  }
+}
+@media (max-width: 780px) {
+  .about .a-container .info .row .right-about .about-info h4 {
+    width: 100%;
+    font-size: 15px;
+  }
+}
 .about .a-container .info .row .right-about .about-info p {
   color: #AAB1B7;
   margin-top: 40px;
@@ -745,10 +762,10 @@
   font-size: 25px;
   font-family: "Muli", sans-serif;
 }
-@media (max-width: 1024px) {
+@media (max-width: 764px) {
   .about .a-container .info .row .right-about .about-info p {
     width: 100%;
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 @media (max-width: 1024px) {
@@ -760,7 +777,13 @@
 @media (max-width: 1000px) {
   .about .a-container .info .row .right-about .about-info p {
     width: 100%;
-    font-size: 15px;
+    font-size: 25px;
+  }
+}
+@media (max-width: 850px) {
+  .about .a-container .info .row .right-about .about-info p {
+    width: 100%;
+    font-size: 20px;
   }
 }
 .about .a-container .info .row .right-about .about-button {
