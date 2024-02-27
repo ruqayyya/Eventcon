@@ -1,0 +1,150 @@
+
+.footer {
+    .sponsor-logo {
+        .s-container {
+            position: relative;
+            padding-top: 150px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                font-family: "Anton", sans-serif;
+                font-size: 40px;
+                margin-bottom: 100px;
+                color: red;
+                @media (max-width: 1125px) {
+                    font-size: 35px;
+                }
+                @media (max-width: 950px) {
+                    font-size: 30px;
+                }
+            }
+            .logo {
+                @media (max-width: 764px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+                img {
+                    height: 130px;
+                    @media (max-width: 1530px) {
+                        height: 100px;
+                    }
+                    @media (max-width: 1125px) {
+                        height: 80px;
+                    }
+                    @media (max-width: 950px) {
+                        height: 70px;
+                    }
+                    @media (max-width: 838px) {
+                        height: 65px;
+                    }
+                    @media (max-width: 764px) {
+                        height: 80px;
+                    }
+                }
+            }
+            .line {
+                &::before {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    content: '';
+                    background: rgba(255, 255, 255, 0.2);
+                    height: 1px;
+                    width: 70%;
+                    top: 500px;
+                    bottom: 0;
+                    @media (max-width: 764px) {
+                        top: 800px;
+                    }
+                }
+            }
+            .place {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 300px;
+                h2{
+                    font-family: "Anton", sans-serif;
+                    font-size: 40px;
+                    color: red;
+                    margin-bottom: 20px;
+                    @media (max-width: 1125px) {
+                        font-size: 35px;
+                    }
+                    @media (max-width: 950px) {
+                        font-size: 30px;
+                    }
+                    @media (max-width: 320px) {
+                        font-size: 20px;
+                    }
+                }
+                h4 {
+                    font-family: "Anton", sans-serif;
+                    font-size: 40px;
+                    color: white;
+                    margin-bottom: 20px;
+                    @media (max-width: 950px) {
+                        font-size: 30px;
+                    }
+                    @media (max-width: 320px) {
+                        font-size: 20px;
+                    }
+                }
+                p {
+                    text-align: center;
+                    font-size: 25px;
+                    width: 80%;
+                    color: #AAB1B7;
+                    @media (max-width: 950px) {
+                        font-size: 20px;
+                    }
+                }
+                .footer-button {
+                    margin-top: 50px;
+                    .button {
+                        background-color: #FF4533 ;
+                        padding: 18px 70px;
+                        margin-bottom: 0;
+                        transition: 0.5s;
+                        border: 1px solid #FF4533;
+                        @media (max-width: 1467px) {
+                            padding: 18px 40px;
+                        }
+                        @media (max-width: 1300px) {
+                            padding: 15px 26px;
+                        }
+                        &:hover {
+                            background-color: transparent;
+                            border: 1px solid #FF4533;
+                        }
+                        a {
+                            text-decoration: none;
+                            font-size: 30px;
+                            font-weight: 400;
+                            font-family: "Anton", sans-serif;
+                            text-transform: capitalize;
+                            color: white;
+                        }
+                    }
+                }
+                span {
+                    margin-top: 200px;
+                    margin-bottom: 80px;
+                    color: #AAB1B7;
+                    font-size: 20px;
+                    @media (max-width: 950px) {
+                        width: 70%;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #FF4533;
+                    }
+                }
+            }
+        } 
+    }
+}
